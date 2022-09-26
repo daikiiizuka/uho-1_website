@@ -1,0 +1,4307 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+}
+
+
+@font-face {
+    font-family: 'tanuki'; 
+    font-family: 'Serif BlackItalic'; 
+    src: url('../fonts/TanukiMagic.ttf') format('truetype');
+    src: url('../fonts/SERIBLI_.ttf') format('truetype');
+        font-family: たぬき油性マジック;
+        src: url('https://cdn.leafscape.be/TanukiMagic/TanukiMagic_web.woff2')
+             format("woff2");
+        
+  }
+  
+  $uho-bg: #F5F5F5;
+  $uho-em: #9B7D60; 
+  $uho-btn: #006933;
+  $pippo-blue: #00CAEA;
+  $pippo-pink: #F45092;
+  $gori-yellow : #FFE437;
+  $gori-green: #E3F116;
+  $gori-hgreen: #018934;
+
+.uho-co-jp{
+    font-family:  たぬき油性マジック;
+    color:#000;
+    line-height: 1.7;
+    background-color: #F5F5F5;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+ 
+}
+
+img{
+    max-width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+
+
+.wrapper{
+margin: 0 auto;
+padding: 0 5%;
+}
+
+
+
+/*メインビジュアル*/
+
+#home-main{
+   position: relative;
+    img{
+        height: 500px;
+        display: block;
+        width: 100%;
+    }h1{
+        position: absolute;
+        top: 190px;
+    left: 50%;
+    transform: translateX(-50%);
+        img{
+            width: 100%;
+            height: 100px;
+        }
+    }
+}
+
+
+
+/*ヘッダー*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1100px;
+    padding: 0 5%;
+    background-color: #F5F5F5;
+    height: 100px;
+    ul{
+        display: flex;
+        justify-content: flex-end;
+        flex: 1;
+        list-style: none;
+        align-items: center;
+        li:not(:last-child){
+            margin-right: 20px;
+        }li{
+            a{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                text-decoration: none;
+                line-height: 1.7;
+                font-family: 'Serif BlackItalic'; 
+                color:  $uho-em; 
+                font-size: 14px; 
+                span{
+                    font-family: たぬき油性マジック;
+                    font-size: 14px;
+                    color: #000;
+                    &:hover {
+                        color: $uho-em;
+                        opacity: 0.7;
+                        }
+                }&:hover {
+                    color: #000;
+                    opacity: 0.7;
+                    }
+            }img{
+                width: 16px; 
+            }
+        }
+    }
+}
+
+.uho-header-logo{
+    width: 200px;
+    img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+/*ごりら印の野球道具エリア*/
+
+.gorilla-baseball-area{
+    background-image: url(../img/uho-gorila-area.jpg);
+    height: 100%;
+        width: 100%;
+        object-fit: cover;
+        .gorilla-jirushi-box{
+       max-width: 1000px;
+       margin: 0 auto;
+       padding: 100px 0;
+        .gorilla-jirushi-area{
+            border: 20px solid #fff;
+            max-width: 1000px;
+            background-color: $uho-bg;
+            .gorilla-jirushi-title{
+                font-size: 32px;
+               color: $uho-em;
+                padding: 10px 0 0 10px;
+            font-family: 'Serif BlackItalic'; 
+                .ja{
+                    display: block;
+                    font-size: 40px;
+                    font-family:たぬき油性マジック; 
+                    color: #F5F5F5;
+                    -webkit-text-stroke: 1px #000;
+                    font-weight: 700;
+                    text-shadow: 5px 5px 0 $gori-yellow;
+                }
+            }p{
+                padding: 0 0 0 10px ;
+            }a{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 40px;
+                width: 200px;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 700;
+                text-decoration: none;
+                background-image: linear-gradient( $uho-btn, #8bd05a);
+                border-radius: 20px;
+                font-family:たぬき油性マジック; 
+                margin: 60px 0 90px 10px;
+                &::after{
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    border-top: 2px solid #fff;
+                    border-right: 2px solid #fff;
+                    transform: rotate(45deg);
+                }&:hover {
+                    color: $gori-yellow;
+                    opacity: 0.7;
+                    }  
+            }.gorilla-flexbox{
+                display: flex;
+                justify-content: space-between;
+                ul{
+                    display: flex;
+                    justify-content: flex-end;
+                    flex: 1;
+                }
+            }
+        }
+        }.emphasis {
+            background-image: linear-gradient(rgba(0, 0, 0, .0) 70%, $gori-yellow 70%);
+          }
+}
+
+.gorilla-jirushi-logo{
+    width: 250px;
+    img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+/*ひだり投げグラブ専門店エリア*/
+
+.uho-pippo-area{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+       background-color: #1D252E;
+        .uho-pippo-box{
+       max-width: 1000px;
+       margin: 0 auto;
+       padding: 100px 0;
+        .uho-pippo-area{
+            border: 20px solid #fff;
+            max-width: 1000px;
+            background-color: #1D252E;
+            .uho-pippo-title{
+                font-size: 32px;
+                color: #fff;
+                padding: 10px 0 0 10px;
+            font-family: 'Serif BlackItalic'; 
+                .ja{
+                    display: block;
+                    font-size: 42px;
+                    color: $pippo-blue;
+                    font-family:たぬき油性マジック; 
+                    color: #F5F5F5;
+                    -webkit-text-stroke: 1px $pippo-blue;
+                    font-weight: 700;
+                    text-shadow: 3px 3px 0 $pippo-pink;
+                }.small{
+                    font-size: 16px;
+                    font-family:たぬき油性マジック; 
+                }
+            }p{
+                padding: 0 0 0 350px ;
+                color: #fff;
+            }a{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 40px;
+                width: 200px;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 700;
+                text-decoration: none;
+                background-image: linear-gradient( $pippo-pink, #f0a9ca);
+                border-radius: 20px;
+                font-family:たぬき油性マジック; 
+                margin: 60px 0 80px 350px;
+                &::after{
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    border-top: 2px solid #fff;
+                    border-right: 2px solid #fff;
+                    transform: rotate(45deg);
+                }&:hover {
+                    color: $gori-yellow;
+                    opacity: 0.7;
+                    }  
+            }.pippo-flexbox{
+                display: flex;
+                ul{
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-right: 90px;
+                }
+            }
+        }
+        }.emphasis {
+            background-image: linear-gradient(rgba(0, 0, 0, .0) 70%, $pippo-pink 70%);
+          }
+}
+
+.uho-pippo-logo{
+    width: 250px;
+    img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+/*うほーむぺーじ製作所*/
+
+.uho-mif-area{
+    background-image: url(../img/uho-mif-area.jpg);
+    height: 100%;
+        width: 100%;
+        object-fit: cover;
+       
+        .uho-mif-box{
+       max-width: 1000px;
+       margin: 0 auto;
+       padding: 100px 0;
+        .uho-mif-coment-area{
+            min-height: 615px;
+            border: 20px solid #fff;
+            max-width: 1000px;
+            background-color: $uho-bg;
+            .uho-mif-title{
+                span{
+                    display: block;
+                    font-size: 42px;
+                    font-family:たぬき油性マジック; 
+                    color: #F5F5F5;
+                    -webkit-text-stroke: 1px #000;
+                    font-weight: 700;
+                    text-shadow: 4px 4px 0 #fff;
+                    margin-top: 40px;
+                }
+            }p{
+                padding: 0 0 0 10px ;
+            }a{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 40px;
+                width: 200px;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 700;
+                text-decoration: none;
+                background-image: linear-gradient($uho-em, #E2B68C);
+                border-radius: 20px;
+                font-family:たぬき油性マジック; 
+                margin: 60px 0 90px 10px;
+                &::after{
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    border-top: 2px solid #fff;
+                    border-right: 2px solid #fff;
+                    transform: rotate(45deg);
+                }&:hover {
+                    color: $gori-yellow;
+                    opacity: 0.7;
+                    }  
+            }.mif-flexbox{
+                display: flex;
+                justify-content: space-between;
+                ul{
+                    display: flex;
+                    justify-content: flex-end;
+                    flex: 1;
+                }
+            }
+        }
+        }.emphasis {
+            background-image: linear-gradient(rgba(0, 0, 0, .0) 70%, $gori-yellow 70%);
+          }
+}
+
+.uho-mif-logo{
+    width: 250px;
+    img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/*フッターエリア*/
+
+.footer{
+
+    .footer-area{
+        background-color: #F5F5F5;
+        height: 100%;
+        margin: 0 auto;
+        padding-bottom: 30px;
+      
+    }.footer-logo{
+        width: 200px;
+        margin: 0 auto;
+    }.footer-nav{
+        display: flex;
+        justify-content: center;
+      
+        li{
+            margin-left: 30px;
+            a{
+                font-family: たぬき油性マジック;
+                font-size: 14px;
+                color: #000;
+                &:hover {
+                    color: $uho-em;
+                    opacity: 0.7;
+                    }
+            }
+        }
+    } ul{
+        display: flex;
+        justify-content: center;
+        li{
+            margin: 50px 10px 0;
+            img{
+                width: 30px;
+            }
+        }
+    }
+}
+   
+
+.copy-area{
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*-------------------------------------------
+ページTOPに戻る 
+-------------------------------------------*/
+
+.pagetop{
+    display: none;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding-right: 5%;
+    a{
+        display: block;
+        font-size: 0;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        background: $pippo-blue;
+        line-height: 50px;
+        &:hover {
+            color: $pippo-pink;
+           opacity: 0.7;
+             } i{
+                font-size: 20px;
+                color:#fff;
+                line-height: 50px;
+            }
+    }
+}
+
+/*-------------------------------------------
+会社概要エリア
+-------------------------------------------*/
+
+#company-main{
+    position: relative;
+     img{
+         height: 250px;
+         display: block;
+         width: 100%;
+     }h1{
+         position: absolute;
+         top: 100px;
+     left: 50%;
+     transform: translateX(-50%);
+     font-family: たぬき油性マジック;
+     font-size: 32px;
+     text-shadow: 3px 3px 0 #fff;
+     }
+ }
+
+ .white-area{
+     background-color: #fff;
+     padding: 150px 0 150px 0;
+ }
+
+ .uho-company-area{
+      margin: 0 10%;
+     dl{
+         display: flex;
+         justify-content: space-between;
+         &:last-child{
+            border-bottom: 1px solid #000;
+         }
+     }dt{
+        padding: 20px 10px;
+         width: 300px;
+         text-align: center;
+         background: #F7F7F7;
+         border-top: 1px solid #000;
+         border-left: 1px solid #000;
+         font-weight: bold;
+         
+     }dd{
+         padding: 20px 30px;
+         width: calc(100% - 300px);
+         background: #fff;
+         border-left: 1px solid #000;
+         border-top: 1px solid #000;
+         border-right: 1px solid #000;
+         color: #424141;
+         
+     }.address{
+         padding: 30px ;
+     }.last{
+        padding: 7% 0;
+    }
+ }
+
+/*-------------------------------------------
+お問い合わせエリア
+-------------------------------------------*/
+.uho-contact-area{
+    margin: 0 15%;
+    label{
+        display: flex;
+        flex-direction: column;
+        align-self: left;
+        flex: 1;
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+    }.title{
+        display: flex;
+        align-self: left;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        width: 220px;
+        font-weight: 700;
+    }.title-textarea{
+        display: flex;
+        justify-content: space-between;
+        align-self: flex-start;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        width: 220px;
+        font-weight: 700;
+    }.required{
+        padding: 7px 10px;
+        font-size: 12px;
+        color: #fff;
+        line-height: 1;
+        background-color: $pippo-pink;
+        border-radius: 10px;
+        margin-left: 10px;
+    }input,textarea{
+        display: block;
+        padding: 20px;
+        flex: 1;
+        background-color: #fff;
+        border: 1px solid #000;
+        border-radius: 10px;
+    }textarea{
+        height: 200px;
+    }.contact-btn{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 40px;
+        width: 250px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        text-decoration: none;
+        background-image: linear-gradient( $pippo-pink, #f0a9ca);
+        border-radius: 20px;
+        font-family:たぬき油性マジック; 
+        margin: 90px auto 0 auto ;
+        &::after{
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-top: 2px solid #fff;
+            border-right: 2px solid #fff;
+            transform: rotate(45deg);
+        }&:hover {
+            color: $gori-yellow;
+            opacity: 0.7;
+            }button{
+                color: #fff;
+            } 
+    }
+}
+
+.personal-information{
+    background-color: #F5F5F5;
+    margin: 60px 0 0;
+    text-align: center;
+    .personal-title{
+        font-size: 32px;
+        font-weight: bold;
+        padding-top: 60px;
+    }.personal-bottom{
+        padding: 30px  0 60px;
+    }
+}
+
+.confirm-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    button{
+        align-items: center;
+        padding: 10px 0 10px 5px;
+        width: 100px;
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+        background-color: $uho-btn;
+        margin-left: 10px;
+        &:hover{
+            color: #6B584C;
+            opacity: 0.7;
+        }
+  }a{
+    align-items: center;
+        padding: 10px 0 10px 35px;
+        width: 100px;
+        color: #000;
+        font-size: 16px;
+        text-decoration: none;
+        background-color: #E8E8E8;
+        margin-right: 10px;
+        &:hover{
+            color: #6B584C;
+            opacity: 0.7;
+        }
+  }
+}
+
+.uho-confirm-area{
+    margin: 30px 30%;
+    text-align: center;
+    label{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.white-area02{
+    background-color: #fff;
+     padding: 150px 20% 150px;
+}
+
+
+.container{
+    text-align: center;
+    margin-top: 120px;
+    padding: 0 5%;
+    .thanks_msg{
+        margin-top: 60px;
+    }.big-thanks{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+
+/*-------------------------------------------
+ごりら印の野球道具
+-------------------------------------------*/
+
+.gorilla-co-jp{
+    font-family: たぬき油性マジック;
+    color:#000;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/*ヘッダー*/
+.gorilla-area-header{
+    margin: 0 auto;
+    background-color: $uho-bg;
+    
+}
+
+.gorilla-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: $uho-bg;
+    height: 120px;
+    ul{
+        display: flex;
+        justify-content: flex-end;
+        flex: 1;
+        list-style: none;
+        align-items: center;
+        li:not(:last-child){
+            margin-right: 20px;
+        }li{
+            a{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                text-decoration: none;
+                line-height: 1.7;
+                font-family: 'Serif BlackItalic'; 
+                color:  $uho-em; 
+                font-size: 14px; 
+                span{
+                    font-family: たぬき油性マジック;
+                    font-size: 14px;
+                    color: #000;
+                    &:hover {
+                        color: $uho-em;
+                        opacity: 0.7;
+                        }
+                }&:hover {
+                    color: #000;
+                    opacity: 0.7;
+                    }
+            }img{
+                width: 16px; 
+            }
+        }
+    }
+}
+
+.gorilla-header-logo{
+    width: 120px;
+    img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+#gorilla-main{
+    position: relative;
+    width: 100%;
+     img{
+         width: 100%;
+     }h1{
+         position: absolute;
+         top: 200px;
+     left: 45%;
+     transform: translateX(-50%);
+     font-family: たぬき油性マジック;
+     font-size: 72px;
+     text-shadow: 6px 3px 0 #000;
+        color: #fff;
+     span{
+         font-size: 40px;
+         display: block;
+     }
+     }
+ }
+
+ .gorilla-about-area{
+     margin: 0 auto;
+     padding: 50px 0 0;
+     background-color: $uho-bg;
+     h1{
+         margin-top: 30px;
+         margin-bottom: 30px;
+         text-align: center;
+     }p{text-align: center;
+
+ }.gorilla-about-area-top{
+     margin-top: 100px;
+     padding: 0 10%;
+ }
+ }
+ .gorilla-about-imgarea{
+    margin-top: 150px;
+    img{
+        width: 100%;
+    }
+}
+ .gorilla-about-title{
+    font-family: たぬき油性マジック;
+       font-size: 40px;
+       color: #000;
+       position: relative;
+  padding-top: 90px;
+  text-align: center;
+  margin: 0 auto;
+  span{
+    position: relative;
+    z-index: 2;
+  }&::before{
+    content: attr(data-en);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(155, 125, 96, 0.3);
+    font-size: 100px;
+    font-family: 'Serif BlackItalic'; 
+    z-index: 1;
+  }
+}
+
+   /*-------------------------------------------
+商品紹介ページ
+-------------------------------------------*/
+
+#product-name-area{
+    background-color: #fff;
+    padding-top: 100px;
+    margin: 0 auto;
+    width: 100%;
+}
+.product-title{
+    font-family: たぬき油性マジック;
+       font-size: 40px;
+       color: #000;
+       position: relative;
+  padding-top: 90px;
+  text-align: center;
+  span{
+    position: relative;
+    z-index: 2;
+  }&::before{
+    content: attr(data-en);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(155, 125, 96, 0.3);
+    font-size: 100px;
+    font-family: 'Serif BlackItalic'; 
+    z-index: 1;
+  }
+}
+
+   /*-------------------------------------------
+SELECTページ/グローブ
+-------------------------------------------*/
+
+#glove{
+    padding: 60px 0 150px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #fff;
+.name-area{
+    padding: 50px 5% 0;
+    text-align: left;
+}.en{
+    font-size: 1rem;
+    color: $uho-em;
+    font-family: たぬき油性マジック;
+}.ja{
+    font-size: 60px;
+    color: #000;
+    font-family: 'Serif BlackItalic';
+}a {
+    display: block;
+    padding: 10px 20px;
+    margin: 150px auto 60px;
+    width: 500px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    background-image: linear-gradient( $uho-btn, #8bd05a);
+    border-radius: 20px;
+    font-family: たぬき油性マジック;
+    &:hover {
+        color: #000;
+      opacity: 0.7;
+    }
+  }
+}
+
+
+.select-content-img01{
+    padding: 100px 5% 0;
+    .img-area-top{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .img01{
+            width: 65%;
+            img{
+                width: 100%;
+            }
+        }.img02{
+            width: 30%;
+            img{
+                width: 100%;
+            }
+        }
+    }.img-area-bottom{
+        display: flex;
+        justify-content: space-between;
+       margin-top: 30px;
+        .img03{
+            width: 30%;
+        }
+        .img04{
+            width: 30%;
+        }.img05{
+            width: 30%;
+        }img{
+            width: 100%;
+        }
+    }
+}
+
+.gorilla-about-imgarea02{
+    margin-top: 200px;
+    img{
+        width: 100%;
+    }
+}
+
+   /*-------------------------------------------
+SELECTページ/スパイク
+-------------------------------------------*/
+
+#spike{
+    background-color: $uho-bg;
+    padding: 100px 5% 150px;
+    width: 100%;
+    .name-area{
+        padding-top: 50px;
+        padding-left: 34%;    
+}.en{
+    font-size: 1rem;
+    color: $uho-em;
+    font-family: たぬき油性マジック;
+    }.ja{
+        font-size: 48px;
+    color: #000;
+    font-family: たぬき油性マジック;
+    }
+}
+
+.select-content02{
+    width: 100%;
+    display: flex;
+    padding-top: 60px;
+    .dami{
+        width: 40%;
+    }.coment{
+        width: 75%;
+    }
+   
+}
+
+.select-content-img02{
+    padding: 100px 0 0;
+    .img-area-top{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .img01{
+            width: 65%;
+            img{
+                width: 100%;
+            }
+        }.img02{
+            width: 30%;
+            img{
+                width: 100%;
+            }
+        }
+    }.img-area-bottom{
+        display: flex;
+        justify-content: space-between;
+       margin-top: 30px;
+        .img03{
+            width: 30%;
+        }
+        .img04{
+            width: 30%;
+        }.img05{
+            width: 30%;
+        }img{
+            width: 100%;
+        }
+    }
+}
+
+.btn-button{
+    a{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+        width: 250px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        text-decoration: none;
+        background-image: linear-gradient( $uho-btn, #8bd05a);
+        border-radius: 20px;
+        font-family:たぬき油性マジック; 
+        margin: 150px auto 0;
+        &::after{
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-top: 2px solid #fff;
+            border-right: 2px solid #fff;
+            transform: rotate(45deg);
+        }&:hover {
+            color: $gori-yellow;
+            opacity: 0.7;
+            }  
+    }
+}
+   /*-------------------------------------------
+SELECTページ/バット
+-------------------------------------------*/
+
+    #bat{
+        background-color: #fff;
+        padding: 100px 5% 150px;
+        width: 100%;
+        .name-area{
+            padding-top: 50px;
+            text-align: left;
+        }.en{
+            font-size: 1rem;
+    color: $uho-em;
+    font-family: たぬき油性マジック;
+        }.ja{
+            font-size: 60px;
+    color: #000;
+    font-family: 'Serif BlackItalic';
+        }
+    }
+    .select-content03{
+        width: 100%;
+        padding-top: 60px;
+        .coment{
+            width: 60%;
+        }h1{
+            margin-top: 30px;
+        }
+    }
+
+    /*-------------------------------------------
+ABOUT/SHOPエリア
+-------------------------------------------*/
+
+#shop-area{
+    height: auto;
+    background-color: $uho-bg;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    p{
+        margin: 60px auto 0;
+        padding: 0 5%;
+        font-family: たぬき油性マジック;
+    }
+}
+.shop-name{
+    font-family: たぬき油性マジック;
+       font-size: 40px;
+       color: #000;
+       position: relative;
+  padding-top: 90px;
+  text-align: center;
+  span{
+    position: relative;
+    z-index: 2;
+  }&::before{
+    content: attr(data-en);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(155, 125, 96, 0.3);
+    font-size: 100px;
+    font-family: 'Serif BlackItalic'; 
+    z-index: 1;
+  }
+}
+
+
+.info-coment{
+    font-size: 1.2rem;
+}
+
+.content02{
+    margin: 60px auto 0;
+    padding: 0 5% 60px;
+    }
+    
+    #ac-menu{
+        li{
+            border-top: solid 1px #000;
+            &:last-child{
+                border-bottom: solid 1px #000;
+            }
+        }.label{
+        cursor: pointer;
+        font-size: 1.125rem;
+        font-weight: bold;
+        padding: 20px 30px;
+        position: relative;
+        transition: .5s;
+        &:hover{
+            background-color: rgba( 122, 195, 26, 0.6);
+        }
+        /*
+    ラベル右側のアイコン「＋」を設定
+    beforeが横棒
+    afterが縦棒
+    */
+        &::before,
+        &::after{
+            content: '';
+            width: 25px;
+            height: 4px;
+            background: #000;
+            position: absolute;
+            top: 50%;
+            right: 5%;
+            transform: translateY(-50%);
+        }&::after{
+            transform: translateY(-50%) rotate(90deg);
+            transition: .5s;
+        }
+        /*
+    アコーディオンメニューが開いている場合
+    */
+        &.open{
+            /* ラベルの背景色を変更 */
+            background-color: rgba( 122, 195, 26, 0.6);
+            &::before{
+                 /* ラベルアイコンの横棒を非表示 */
+            opacity: 0;
+            }&::after{
+                /* ラベルアイコンの縦棒を横向きに回転 */
+            transform: rotate(180deg);
+            }
+        }
+    }
+    /*
+    アコーディオンメニューのコンテンツ部分は、「display: none;」で非表示にしておく。
+    ラベルクリック時にjQueryの「  $(this).next().slideToggle();」で表示に切り替わる
+    */
+        .detail{
+            border-top: solid 1px rgba( 122, 195, 26, 0.6);
+            padding: 35px 30px;
+            display: none;
+            dl{
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 2vh;
+            }dt{
+                width: 20%;
+                font-weight: bold;
+                margin-bottom: 40px;
+            }dd{
+                width: 80%;
+                margin-bottom: 40px;
+                a{
+                    color: #181818;
+                    &:hover {
+                        color: $gori-green;
+                      opacity: 0.7;
+                    }
+                }
+            }
+        }
+    }
+#gorilla-contact-name-area{
+    background-color: #fff;
+    padding-top: 30px;
+    width: 100%;
+}
+    .gorilla-contact-name{
+        font-family: たぬき油性マジック;
+           font-size: 40px;
+           color: #000;
+           position: relative;
+      padding-top: 90px;
+      text-align: center;
+      span{
+        position: relative;
+        z-index: 2;
+      }&::before{
+        content: attr(data-en);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        color: rgba(155, 125, 96, 0.3);
+        font-size: 100px;
+        font-family: 'Serif BlackItalic'; 
+        z-index: 1;
+      }
+    }
+
+
+    .gorilla-contact-area{
+        margin: 0 auto;
+        padding: 60px 15% 100px;
+        background-color: #fff;
+        label{
+            display: flex;
+            align-self: center;
+            flex: 1;
+            &:not(:last-child){
+                margin-bottom: 20px;
+            }
+        }.title{
+            display: flex;
+            justify-content: space-between;
+            align-self: center;
+            padding-right: 20px;
+            width: 220px;
+            font-weight: 700;
+        }.title-textarea{
+            display: flex;
+            justify-content: space-between;
+            align-self: flex-start;
+            padding-top: 20px;
+            padding-right: 20px;
+            width: 220px;
+            font-weight: 700;
+        }.required{
+            padding: 7px 10px;
+            font-size: 12px;
+            line-height: 1;
+            background-color: $pippo-pink;
+            color: #fff;
+            border-radius: 10px;
+        }input,textarea{
+            display: block;
+            padding: 20px;
+            flex: 1;
+            background-color: #fff;
+            border: 2px solid #000;
+            border-radius: 10px;
+        }textarea{
+            height: 200px;
+        }a {
+            display: block;
+            padding: 10px 20px;
+            margin: 100px auto 10px;
+            width: 500px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+            background-image: linear-gradient( $uho-btn, #8bd05a);
+            border-radius: 20px;
+            font-family: たぬき油性マジック;
+            &:hover {
+                color: #000;
+              opacity: 0.7;
+            }
+        }
+    }
+    
+    /*フッターエリア*/
+
+.footer-gorilla{
+    .footer-gorilla-area{
+        background-color: #fff;
+        height: 100%;
+    width: none;
+    margin: 0 auto;  
+    padding-bottom: 30px;
+    }.footer-gorilla-logo{
+        width: 100px;
+        margin: 0px auto;
+        padding-top: 20px;
+    }.footer-gorilla-nav{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        li{
+            margin-left: 30px;
+            a{
+                font-family: たぬき油性マジック;
+                font-size: 14px;
+                color: #000;
+                &:hover {
+                    color: $uho-em;
+                    opacity: 0.7;
+                    }
+            }
+        }
+    } ul{
+        display: flex;
+        justify-content: center;
+        li{
+            margin: 50px 10px 0;
+            img{
+                width: 30px;
+            }
+        }
+    }
+}
+
+
+/*-------------------------------------------
+ページTOPに戻る 
+-------------------------------------------*/
+
+.pagetop-gorilla{
+    display: none;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding-right: 5%;
+
+    a{
+        display: block;
+        font-size: 0;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        background: $gori-hgreen;
+        line-height: 50px;
+        &:hover {
+            color: $gori-green;
+           opacity: 0.7;
+             } i{
+                font-size: 20px;
+                color:#fff;
+                line-height: 50px;
+            }
+    }
+}
+
+
+/*-------------------------------------------
+pippoひだり投げグラブ専門店
+-------------------------------------------*/
+.pippo-co-jp{
+    font-family: "Hiragino Mincho ProN、ヒラギノ明朝 ProN、Hiragino Mincho Pro、ヒラギノ明朝 Pro";
+    color:#000;
+    line-height: 1.7;
+    margin: 0;
+}
+
+#pippo-main{
+    position: relative;
+     img{
+         height: 500px;
+         display: block;
+         width: 100%;
+     }h1{
+         position: absolute;
+         top: 160px;
+     left: 50%;
+     transform: translateX(-50%);
+         img{
+             width: 100%;
+             height: 200px;
+         }
+     }
+ }
+
+
+/*ヘッダー*/
+.pippo-area-header{
+    background-color: $pippo-blue;
+    width: 100%;
+}
+.pippo-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: $pippo-blue;
+    height: 120px;
+    ul{
+        display: flex;
+        justify-content: flex-end;
+        flex: 1;
+        list-style: none;
+        align-items: center;
+        li:not(:last-child){
+            margin-right: 20px;
+        }li{
+            a{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                text-decoration: none;
+                line-height: 1.7;
+                font-family: 'Serif BlackItalic'; 
+                color:  $pippo-pink; 
+                font-size: 14px; 
+                span{
+                    font-family: たぬき油性マジック;
+                    font-size: 14px;
+                    color: #fff;
+                    &:hover {
+                        color: $pippo-pink;
+                        opacity: 0.7;
+                        }
+                }&:hover {
+                    color: #fff;
+                    opacity: 0.7;
+                    }
+            }img{
+                width: 16px; 
+            }
+        }
+    }
+}
+
+.pippo-header-logo{
+    width: 200px;
+    img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+/*紹介エリア*/
+
+.pippo-about-title{
+    font-family: たぬき油性マジック;
+       font-size: 40px;
+       color: #000;
+       position: relative;
+  padding-top: 90px;
+  text-align: center;
+  margin: 100px auto 0;
+  span{
+    position: relative;
+    z-index: 2;
+  }&::before{
+    content: attr(data-en);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(244, 80, 146, 0.3);
+    font-size: 100px;
+    font-family: 'Serif BlackItalic'; 
+    z-index: 1;
+  }
+}
+
+.pippo-baseball-area{
+    height: 1100px;
+        width: 100%;
+        object-fit: cover;
+        .pippo-box{
+       max-width: 1100px;
+       margin: 0 auto;
+       padding: 120px 0;
+        .pippo-area{
+            min-height: 615px;
+            border: 1px solid #1D252E;
+            width: 100%;
+            background-color: #fff;
+            .pippo-title{
+                font-size: 32px;
+               color: $pippo-blue;
+                padding: 10px 0 0 10px;
+            font-family: 'Serif BlackItalic'; 
+                .ja{
+                    display: block;
+                    font-size: 40px;
+                    font-family:たぬき油性マジック; 
+                    color: #F5F5F5;
+                    -webkit-text-stroke: 1px #000;
+                    font-weight: 700;
+                    text-shadow: 2px 2px 0 #000;
+                }
+            }p{
+                padding: 0 20px 30px 20px ;
+            }.top-coment{
+                padding-top: 100px;
+            }.last-coment{
+                padding-bottom: 100px;
+            }
+        }
+        }
+}
+
+  /*-------------------------------------------
+商品紹介ページ
+-------------------------------------------*/
+
+.product-pippo-title{
+    font-family: たぬき油性マジック;
+       font-size: 40px;
+       color: #000;
+       position: relative;
+  padding-top: 90px;
+  text-align: center;
+  span{
+    position: relative;
+    z-index: 2;
+  }&::before{
+    content: attr(data-en);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(244, 80, 146, 0.3);
+    font-size: 100px;
+    font-family: 'Serif BlackItalic'; 
+    z-index: 1;
+  }
+}
+
+   /*-------------------------------------------
+SELECTページ/グローブ
+-------------------------------------------*/
+
+#glove-pippo{
+    padding: 60px 5% 50px;
+    margin: 0 auto;
+    width: 100%;
+    background-image: url(../img/pipoo-glove-area.jpg);
+.pippo-name-area{
+    padding-top: 50px;
+    text-align: left;
+}.en{
+    font-size: 1rem;
+    color: $pippo-blue;
+    font-family: たぬき油性マジック;
+}.ja{
+    font-size: 60px;
+    color: #000;
+    font-family: 'Serif BlackItalic';
+}a {
+    display: block;
+    padding: 10px 20px;
+    margin: 100px auto 60px;
+    width: 500px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    background-image: linear-gradient( $pippo-pink, #f0a9ca);
+    border-radius: 20px;
+    font-family: たぬき油性マジック;
+    &:hover {
+        color: $pippo-blue;
+      opacity: 0.7;
+    }
+  }
+}
+
+    /*-------------------------------------------
+ABOUT/SHOPエリア
+-------------------------------------------*/
+
+#pippo-shop-area{
+    height: auto;
+    background-color: #fff;
+    p{
+        margin: 60px auto 0;
+        padding: 0 5%;
+        font-family: たぬき油性マジック;
+    }
+}
+.pippo-shop-name{
+    font-family: たぬき油性マジック;
+       font-size: 40px;
+       color: #000;
+       position: relative;
+  padding-top: 90px;
+  text-align: center;
+  margin-top: 70px;
+  span{
+    position: relative;
+    z-index: 2;
+  }&::before{
+    content: attr(data-en);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(244, 80, 146, 0.3);
+    font-size: 100px;
+    font-family: 'Serif BlackItalic'; 
+    z-index: 1;
+  }
+}
+
+    #pippo-ac-menu{
+        li{
+            border-top: solid 1px #000;
+            &:last-child{
+                border-bottom: solid 1px #000;
+            }
+        }.label{
+        cursor: pointer;
+        font-size: 1.125rem;
+        font-weight: bold;
+        padding: 20px 30px;
+        position: relative;
+        transition: .5s;
+        &:hover{
+            background-color: rgba( 0, 202, 234, 0.6);
+        }
+        /*
+    ラベル右側のアイコン「＋」を設定
+    beforeが横棒
+    afterが縦棒
+    */
+        &::before,
+        &::after{
+            content: '';
+            width: 25px;
+            height: 4px;
+            background: $pippo-blue;
+            position: absolute;
+            top: 50%;
+            right: 5%;
+            transform: translateY(-50%);
+        }&::after{
+            transform: translateY(-50%) rotate(90deg);
+            transition: .5s;
+        }
+        /*
+    アコーディオンメニューが開いている場合
+    */
+        &.open{
+            /* ラベルの背景色を変更 */
+            background-color: rgba( 0, 202, 234, 0.6);
+            &::before{
+                 /* ラベルアイコンの横棒を非表示 */
+            opacity: 0;
+            }&::after{
+                /* ラベルアイコンの縦棒を横向きに回転 */
+            transform: rotate(180deg);
+            }
+        }
+    }
+    /*
+    アコーディオンメニューのコンテンツ部分は、「display: none;」で非表示にしておく。
+    ラベルクリック時にjQueryの「  $(this).next().slideToggle();」で表示に切り替わる
+    */
+        .detail{
+            border-top: solid 1px rgba( 0, 202, 234, 0.6);
+            padding: 35px 30px;
+            display: none;
+            dl{
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 2vh;
+            }dt{
+                width: 20%;
+                font-weight: bold;
+                margin-bottom: 40px;
+            }dd{
+                width: 80%;
+                margin-bottom: 40px;
+                a{
+                    color: #181818;
+                    &:hover {
+                        color: $pippo-blue;
+                      opacity: 0.7;
+                    }
+                }
+            }
+        }
+    }
+
+    .pippo-contact-name{
+        font-family: たぬき油性マジック;
+           font-size: 40px;
+           color: #000;
+           position: relative;
+      padding-top: 90px;
+      text-align: center;
+      span{
+        position: relative;
+        z-index: 2;
+      }&::before{
+        content: attr(data-en);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        color: rgba(244, 80, 146, 0.3);
+        font-size: 100px;
+        font-family: 'Serif BlackItalic'; 
+        z-index: 1;
+      }
+    }
+
+
+    #pippo-contact-area{
+        margin: 0 auto;
+        padding: 60px 15% 100px;
+        background-image: url(../img/pipoo-glove-area.jpg);
+        label{
+            display: flex;
+            align-self: center;
+            flex: 1;
+            &:not(:last-child){
+                margin-bottom: 20px;
+            }
+        }.title{
+            display: flex;
+            justify-content: space-between;
+            align-self: center;
+            padding-right: 20px;
+            width: 220px;
+            font-weight: 700;
+        }.title-textarea{
+            display: flex;
+            justify-content: space-between;
+            align-self: flex-start;
+            padding-top: 20px;
+            padding-right: 20px;
+            width: 220px;
+            font-weight: 700;
+        }.required{
+            padding: 7px 10px;
+            font-size: 12px;
+            line-height: 1;
+            background-color: $pippo-pink;
+            color: #fff;
+            border-radius: 10px;
+        }input,textarea{
+            display: block;
+            padding: 20px;
+            flex: 1;
+            background-color: #fff;
+            border: 2px solid #000;
+            border-radius: 10px;
+        }textarea{
+            height: 200px;
+        }a {
+            display: block;
+            padding: 10px 20px;
+            margin: 100px auto 10px;
+            width: 500px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+            background-image: linear-gradient( $pippo-pink, #f0a9ca);
+            border-radius: 20px;
+            font-family: たぬき油性マジック;
+            &:hover {
+                color: #000;
+              opacity: 0.7;
+            }
+        }.pippo-contact-area-box{
+            margin-top: 60px;
+        }
+    }
+
+/*フッターエリア*/
+
+.footer-pippo{
+    .footer-pippo-area{
+        background-color: $pippo-blue;
+        height: 250px;
+    width: none;
+    margin: 0 auto;  
+    }.footer-pippo-logo{
+        width: 200px;
+        margin: 0px auto;
+        padding-top: 10px;
+    }.footer-pippo-nav{
+        display: flex;
+        justify-content: center;
+        li{
+            margin-left: 30px;
+            a{
+                font-family: たぬき油性マジック;
+                font-size: 14px;
+                color: #fff;
+                &:hover {
+                    color: $uho-em;
+                    opacity: 0.7;
+                    }
+            }
+        }
+    } ul{
+        display: flex;
+        justify-content: center;
+        li{
+            margin: 40px 10px 0;
+            img{
+                width: 30px;
+            }
+        }
+    }.copy-area{
+        height: 50px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding-top: 10px;
+    }
+}
+
+
+/*-------------------------------------------
+ページTOPに戻る 
+-------------------------------------------*/
+
+.pagetop-pippo{
+    display: none;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding-right: 5%;
+
+    a{
+        display: block;
+        font-size: 0;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        background: $pippo-pink;
+        line-height: 50px;
+        &:hover {
+            color: $pippo-blue;
+           opacity: 0.7;
+             } i{
+                font-size: 20px;
+                color:#fff;
+                line-height: 50px;
+            }
+    }
+}
+
+/*-------------------------------------------
+うほーむぺーじ製作所
+-------------------------------------------*/
+
+
+.uho-me-header-logo{
+    width: 200px;
+    img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+#uho-me-main{
+    position: relative;
+     img{
+         height: 100%;
+         display: block;
+         width: 100%;
+     }
+ }
+
+ .footer-uho-me-logo{
+    width: 200px;
+    margin: 0 auto;
+}
+
+
+/*-------------------------------------------
+ホームページ制作　「コメントエリア」
+-------------------------------------------*/
+
+#service-coment-img{
+    background: url(../img/service-sabmaine01.jpg);
+    background-size: cover;
+    height: 505px;
+    margin-top: 100px;
+    .service-coment01{
+        text-align: left;
+        padding: 10px 1% 50px 5%;
+        width: 55%;
+        background-color: #fff;
+        h2{
+            color: $uho-em;
+            font-family: たぬき油性マジック;
+            font-weight: lighter;
+        }p{
+            margin-top: 30px;
+        }
+    }
+}
+
+/*-------------------------------------------
+ホームページ制作　「問題解決エリア」
+-------------------------------------------*/
+
+#service-coment-img02{
+    display: flex;
+    margin: 150px 0;
+    .service-left{
+        width: 50%;
+        padding: 0 5%;
+    }.service-right{
+        text-align: left;
+        width: 50%;
+        background-color: #fff;
+        h2{
+            color: $uho-em;
+            font-family: たぬき油性マジック;
+            font-weight: lighter;
+        }p{
+            margin-top: 30px;
+        }.coment-top{
+        margin-top: 60px;
+    }
+    }img{
+        height: 300px;
+    }
+}
+
+/*-------------------------------------------
+ホームページ制作　「FLOWエリア」
+-------------------------------------------*/
+
+#service-flow{
+    padding: 50px 0 150px;
+    background-color: #F1F1F1;
+    .section-title{
+        text-align: center;
+        h2{
+            font-weight: 400;
+            font-style: normal;
+            font-size: 64px;
+            color: $uho-em;
+        }h3{
+            font-size: 16px;
+            line-height: 0;
+            margin-top: 10px;
+        }
+    }.flow-box-area{
+        margin-top: 100px;
+        .flow-box{
+            background-color: $uho-em;
+            margin: 0px 5% 0;
+            color: #fff;
+            display:  flex;
+            align-items: center;
+            padding: 20px 0;
+            .txt{
+                text-align: center;
+                width: 20%;
+                border-left: 1px solid #fff;
+                border-right: 1px solid #fff;
+                .icon{
+                    img{
+                        width: 100px;
+                    }
+                }
+            }.flow-txt{
+                text-align: left;
+                width: 50%;
+                padding: 0 20px;
+            }.num{
+               font-size: 40px;
+               width: 30%;
+               text-align: center;
+            }
+        }a{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px;
+            width: 250px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 100;
+            text-decoration: none;
+            background-image: linear-gradient($uho-em, #E2B68C);
+            border-radius: 20px;
+            font-family: たぬき油性マジック;
+            margin: 150px auto 0;
+            &::after{
+                content: '';
+                width: 10px;
+                height: 10px;
+                border-top: 2px solid #fff;
+                border-right: 2px solid #fff;
+                transform: rotate(45deg);
+            }&:hover {
+                color: $gori-yellow;
+                opacity: 0.7;
+                }  
+        }
+    }
+}
+/*縦のライン*/
+.v_line_fix {
+    margin-left: 18.5%;
+    width: 3px;
+    height: 80px;
+    background-color: $uho-em;
+  }
+
+/*-------------------------------------------
+ページTOPに戻る 
+-------------------------------------------*/
+
+.pagetop-uho-me{
+    display: none;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding-right: 5%;
+
+    a{
+        display: block;
+        font-size: 0;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        background: $uho-em;
+        line-height: 50px;
+        &:hover {
+            color: $gori-green;
+           opacity: 0.7;
+             } i{
+                font-size: 20px;
+                color:#fff;
+                line-height: 50px;
+            }
+    }
+}
+
+.privacy-area{
+    padding: 80px 5% 180px;
+    text-align: left;
+    background-color: #fff;
+    h2{
+        color: $uho-em;
+        margin-top: 30px;
+    }p{
+        margin-top: 20px;
+    }
+}
+
+
+
+/*レスポンシブ*/
+
+@media screen and (min-width: 1100px){
+    #header{
+        display: none;
+    }
+
+    #gorilla-header{
+        display: none;
+    }
+    #pippo-header{
+        display: none;
+    }
+    #uho-me-header{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1100px)and(min-width:768px){
+
+
+    #home-main{
+         img{
+             height: 300px;
+             display: block;
+         }h1{
+             top: 120px;
+         left: 50%;
+             img{
+                 height: 75px;
+             }
+         }
+     }
+
+
+    .header{
+        display: none;
+    }
+    .gorilla-header{
+        display: none;
+    }
+
+    .pippo-header{
+        display: none;
+    }
+
+    #header{    
+        height: 120px;
+        background-color: #F5F5F5;
+        padding: 0;    
+        position: relative;
+        z-index: 10;
+        .site-title{
+            width: 270px;
+            padding-top: 0;
+            padding-left: 5%;
+        }
+    }
+
+    
+    
+  //ハンバーガー
+
+  #navi {
+    position: relative;
+    top: -1500px;
+    width: 100%;
+    color: #000;
+    background-color: rgba( 245, 245, 245, 0.9);
+    transition: all .5s;
+    z-index: 20;
+    opacity: 0;
+  .nav-menu {
+    margin-bottom: 60px;
+    border-bottom: solid 1px #000;
+    li {
+      margin: 0;
+      padding: 20px;
+      font-weight: bold;
+      border-top: solid 1px #000;
+      text-align: center;
+    a {
+        color: #000;
+       font-family: たぬき油性マジック;
+       font-size: 18px;
+      &:hover {
+        color: $uho-em;
+      opacity: 0.7;
+    }
+          }img{
+            width: 25px;
+          }
+        }
+      }
+    }
+
+  .open {
+ .toggle_btn {
+      span {
+    background-color: $uho-em;
+    &:nth-child(1) {
+        -webkit-transform: translateY(10px) rotate(-315deg);
+        transform: translateY(10px) rotate(-315deg);
+      }&:nth-child(2) {
+        opacity: 0;
+      }&:nth-child(3) {
+        -webkit-transform: translateY(-10px) rotate(315deg);
+        transform: translateY(-10px) rotate(315deg);
+      }
+  }
+} #navi {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.toggle_btn {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 5%;
+    width: 30px;
+    height: 30px;
+    transition: all .5s;
+    cursor: pointer;
+    z-index: 20;
+    span {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background-color: $uho-em;
+        border-radius: 4px;
+        transition: all .5s;
+        &:nth-child(1) {
+            top: 4px;
+          }&:nth-child(2) {
+            top: 14px;
+          }&:nth-child(3) {
+            bottom: 4px;
+          }
+      } .toggle-center{
+        width: 20px;
+    }
+  }
+
+ 
+
+  #mask {
+    display: none;
+    transition: all 0.5s;
+  }
+  .open #mask {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba( 245, 245, 245, 0.9);
+    opacity: .8;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  /*ごりら印の野球道具エリア*/
+
+.gorilla-baseball-area{
+    padding: 0 5%;
+        .gorilla-jirushi-box{
+        .gorilla-jirushi-area{
+            .gorilla-jirushi-title{
+                .ja{
+                    font-size: 32px;
+                }
+            }
+        }
+        }
+}
+.gorilla-jirushi-logo{
+    width: 180px;
+}
+
+
+ /*ひだり投げグラブ専門店エリア*/
+
+ .uho-pippo-area{
+    padding: 0 5%;
+        .uho-pippo-box{
+        .uho-pippo-area{
+            height: 100%;
+            .uho-pippo-title{
+                padding-left: 40px;
+                font-size: 24px;
+                .ja{
+                    font-size: 28px;
+                }
+            }p{
+                padding-left: 280px;
+                padding-top: 20px;
+            }a{
+                margin: 60px 0 60px 280px;
+            }
+        }
+        }
+}
+.uho-pippo-logo{
+    width: 170px;
+}
+
+ /*（株）エムアイエフエリア*/
+
+ .uho-mif-area{
+    padding: 0 5%;
+        .uho-mif-box{
+        .uho-mif-coment-area{
+            .uho-mif-title{
+                span{
+                    font-size: 30px;
+                }
+            }
+        }
+        }
+}
+.uho-mif-logo{
+    width: 180px;
+}
+
+/*フッターエリア*/
+
+
+
+
+
+/*-------------------------------------------
+会社概要エリア
+-------------------------------------------*/
+
+#company-main{
+     img{
+         height: 200px; 
+         width: 100%;
+     }h1{
+         top: 70px;
+         text-shadow: 2px 2px 0 #fff;
+     }
+ }
+
+ .uho-company-area{
+      margin: 0 5%;
+    dt{
+         
+         width: 20%;
+     }dd{
+        
+         width: 80%;
+     }.address{
+        padding: 50px 30px 40px;
+     }
+ }
+
+ /*-------------------------------------------
+ごりら印の野球道具
+-------------------------------------------*/
+
+ #gorilla-header{    
+    height: 120px;
+    background-color: $uho-bg;
+    padding: 0 ;    
+    position: relative;
+    z-index: 10;
+    margin: 0 auto;
+    .site-title{
+        width: 180px;
+        padding-top: 10px;
+        padding-left: 5%;
+    }
+}
+
+
+
+//ハンバーガー
+
+#gorilla-navi {
+position: relative;
+top: -1500px;
+width: 100%;
+color: #000;
+background-color: rgba( 245, 245, 245, 0.9);
+transition: all .5s;
+z-index: 20;
+opacity: 0;
+.nav-menu {
+margin-bottom: 60px;
+border-bottom: solid 1px #000;
+li {
+  margin: 0;
+  padding: 20px;
+  font-weight: bold;
+  border-top: solid 1px #000;
+  text-align: center;
+a {
+    color: #000;
+   font-family: たぬき油性マジック;
+   font-size: 18px;
+  &:hover {
+    color: $uho-em;
+  opacity: 0.7;
+}
+      }img{
+        width: 25px;
+      }
+    }
+  }
+}
+
+.open {
+.toggle_btn {
+  span {
+background-color: #000;
+&:nth-child(1) {
+    -webkit-transform: translateY(10px) rotate(-315deg);
+    transform: translateY(10px) rotate(-315deg);
+  }&:nth-child(2) {
+    opacity: 0;
+  }&:nth-child(3) {
+    -webkit-transform: translateY(-10px) rotate(315deg);
+    transform: translateY(-10px) rotate(315deg);
+  }
+}
+} #gorilla-navi {
+top: 0;
+opacity: 1;
+}
+}
+
+.gorilla-toggle_btn {
+display: block;
+position: absolute;
+top: 40px;
+right: 5%;
+width: 30px;
+height: 30px;
+transition: all .5s;
+cursor: pointer;
+z-index: 20;
+span {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    border-radius: 4px;
+    transition: all .5s;
+    &:nth-child(1) {
+        top: 4px;
+      }&:nth-child(2) {
+        top: 14px;
+      }&:nth-child(3) {
+        bottom: 4px;
+      }
+  } .toggle-center{
+    width: 20px;
+}
+}
+
+#gorilla-mask {
+display: none;
+transition: all 0.5s;
+}
+.open #gorilla-mask {
+display: block;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba( 245, 245, 245, 0.9);
+opacity: .8;
+z-index: 10;
+cursor: pointer;
+}
+
+#gorilla-main{
+    margin: 0 auto;
+     h1{
+         top: 200px;
+         left: 50%;
+     font-size: 56px;
+     text-shadow: 5px 3px 0 #000;
+     width: 100%;
+     span{
+         font-size: 32px;
+     }
+     }
+    }
+
+ /*-------------------------------------------
+、ひだり投げグラブ専門店
+-------------------------------------------*/
+
+
+    #pippo-header{    
+        height: 120px;
+        background-color: $pippo-blue;
+        padding: 0;    
+        position: relative;
+        z-index: 10;
+        .pippo-site-title{
+            width: 270px;
+            padding-top: 10px;
+            padding-left: 5%;
+        }
+    }
+
+    
+    
+  //ハンバーガー
+
+  #pippo-navi {
+    position: relative;
+    top: -1500px;
+    width: 100%;
+    color: #000;
+    background-color: rgba( 245, 245, 245, 0.9);
+    transition: all .5s;
+    z-index: 20;
+    opacity: 0;
+  .nav-menu {
+    margin-bottom: 60px;
+    border-bottom: solid 1px #000;
+    li {
+      margin: 0;
+      padding: 20px;
+      font-weight: bold;
+      border-top: solid 1px #000;
+      text-align: center;
+    a {
+        color: #000;
+       font-family: たぬき油性マジック;
+       font-size: 18px;
+      &:hover {
+        color: $uho-em;
+      opacity: 0.7;
+    }
+          }img{
+            width: 25px;
+          }
+        }
+      }
+    }
+
+  .open {
+ .toggle_btn {
+      span {
+    background-color: #000;
+    &:nth-child(1) {
+        -webkit-transform: translateY(10px) rotate(-315deg);
+        transform: translateY(10px) rotate(-315deg);
+      }&:nth-child(2) {
+        opacity: 0;
+      }&:nth-child(3) {
+        -webkit-transform: translateY(-10px) rotate(315deg);
+        transform: translateY(-10px) rotate(315deg);
+      }
+  }
+} #pippo-navi {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.pippo-toggle_btn {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 5%;
+    width: 30px;
+    height: 30px;
+    transition: all .5s;
+    cursor: pointer;
+    z-index: 20;
+    span {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        border-radius: 4px;
+        transition: all .5s;
+        &:nth-child(1) {
+            top: 4px;
+          }&:nth-child(2) {
+            top: 14px;
+          }&:nth-child(3) {
+            bottom: 4px;
+          }
+      } .toggle-center{
+        width: 20px;
+    }
+  }
+
+ 
+
+  #pippo-mask {
+    display: none;
+    transition: all 0.5s;
+  }
+  .open #pippo-mask {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba( 245, 245, 245, 0.9);
+    opacity: .8;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  .pippo-baseball-area{
+    height: 100%;
+    padding: 0 5% 30px;
+        .pippo-box{
+     width: 100%;
+       margin: 0 auto;
+       padding: 120px 5%;
+        .pippo-area{
+           
+            .pippo-title{
+              
+                .ja{
+                   
+                }
+            }p{
+                padding: 0 20px 30px 20px ;
+            }.top-coment{
+                padding-top: 100px;
+            }.last-coment{
+                padding-bottom: 50px;
+            }
+        }
+        }
+}
+
+/*-------------------------------------------
+うほーむぺーじ製作所
+-------------------------------------------*/
+
+#uho-me-header{    
+    height: 120px;
+    background-color: $uho-bg;
+    padding: 0 ;    
+    position: relative;
+    z-index: 10;
+    margin: 0 auto;
+    .site-title{
+        width: 200px;
+        padding-top: 20px;
+        padding-left: 5%;
+    }
+}
+
+
+
+//ハンバーガー
+
+#uho-me-navi {
+position: relative;
+top: -1500px;
+width: 100%;
+color: #000;
+background-color: rgba( 245, 245, 245, 0.9);
+transition: all .5s;
+z-index: 20;
+opacity: 0;
+.nav-menu {
+margin-bottom: 60px;
+border-bottom: solid 1px #000;
+li {
+  margin: 0;
+  padding: 20px;
+  font-weight: bold;
+  border-top: solid 1px #000;
+  text-align: center;
+a {
+    color: #000;
+   font-family: たぬき油性マジック;
+   font-size: 18px;
+  &:hover {
+    color: $uho-em;
+  opacity: 0.7;
+}
+      }img{
+        width: 25px;
+      }
+    }
+  }
+}
+
+.open {
+.toggle_btn {
+  span {
+background-color: #000;
+&:nth-child(1) {
+    -webkit-transform: translateY(10px) rotate(-315deg);
+    transform: translateY(10px) rotate(-315deg);
+  }&:nth-child(2) {
+    opacity: 0;
+  }&:nth-child(3) {
+    -webkit-transform: translateY(-10px) rotate(315deg);
+    transform: translateY(-10px) rotate(315deg);
+  }
+}
+} #uho-me-navi {
+top: 0;
+opacity: 1;
+}
+}
+
+.uho-me-toggle_btn {
+display: block;
+position: absolute;
+top: 40px;
+right: 5%;
+width: 30px;
+height: 30px;
+transition: all .5s;
+cursor: pointer;
+z-index: 20;
+span {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    border-radius: 4px;
+    transition: all .5s;
+    &:nth-child(1) {
+        top: 4px;
+      }&:nth-child(2) {
+        top: 14px;
+      }&:nth-child(3) {
+        bottom: 4px;
+      }
+  } .toggle-center{
+    width: 20px;
+}
+}
+
+#uho-me-mask {
+display: none;
+transition: all 0.5s;
+}
+.open #uho-me-mask {
+display: block;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba( 245, 245, 245, 0.9);
+opacity: .8;
+z-index: 10;
+cursor: pointer;
+}
+
+#gorilla-main{
+    margin: 0 auto;
+     h1{
+         top: 200px;
+         left: 50%;
+     font-size: 56px;
+     text-shadow: 5px 3px 0 #000;
+     width: 100%;
+     span{
+         font-size: 32px;
+     }
+     }
+    }
+
+
+    #uho-me-main{
+        position: relative;
+         img{
+             height: 500px;
+             display: block;
+             width: 100%;
+         }h1{
+             position: absolute;
+             top: 190px;
+         left: 50%;
+         transform: translateX(-50%);
+         font-size: 38px;
+         color: #fff;
+         font-family: たぬき油性マジック;
+         }h2{
+            position: absolute;
+            top: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 24px;
+        color: #fff;
+        font-family: "ヒラギノ明朝 ProN";
+         }
+     }
+
+
+
+    .footer-uho-me-logo{
+        width: 180px;
+        margin: 0 auto;
+    }
+
+    #service-coment-img{
+        .service-coment01{
+            width: 70%;
+            br{
+                display: none;
+            }
+        }
+       }
+
+       .personal-information {
+            .personal-bottom{
+        padding: 30px 10px 40px;
+        text-align: left;
+        br{
+            display: none;
+        }
+       }
+    }
+
+
+    .footer-gorilla .footer-gorilla-nav li{
+        margin-left: 15px;
+    }
+
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 768px){
+
+    #home-main{
+        img{
+            height: 300px;
+            display: block;
+        }h1{
+            top: 120px;
+        left: 50%;
+            img{
+                height: 65px;
+            }
+        }
+    }
+
+
+   .header{
+       display: none;
+   }
+
+   .gorilla-header{
+       display: none;
+   }
+
+   .pippo-header{
+       display: none;
+   }
+
+   #header{    
+       height: 120px;
+       background-color: #F5F5F5;
+       padding: 0;    
+       position: relative;
+       z-index: 30;
+       .site-title{
+           width: 210px;
+           padding-top: 10px;
+           padding-left: 5%;
+       }
+   }
+   
+ //ハンバーガー
+
+ #navi {
+    position: relative;
+    top: -1200px;
+    width: 100%;
+    color: #000;
+    background-color: rgba( 245, 245, 245, 0.9);
+    transition: all .5s;
+    z-index: 20;
+    opacity: 0;
+  .nav-menu {
+    margin-bottom: 60px;
+    border-bottom: solid 1px #000;
+    li {
+      margin: 0;
+      padding: 20px;
+      font-weight: bold;
+      border-top: solid 1px #000;
+      text-align: center;
+    a {
+        color: #000;
+       font-family: たぬき油性マジック;
+       font-size: 16px;
+      &:hover {
+        color: $uho-em;
+      opacity: 0.7;
+    }
+          }img{
+            width: 25px;
+          }
+        }
+      }
+    }
+
+  .open {
+ .toggle_btn {
+      span {
+    background-color: #000;
+    &:nth-child(1) {
+        -webkit-transform: translateY(10px) rotate(-315deg);
+        transform: translateY(10px) rotate(-315deg);
+      }&:nth-child(2) {
+        opacity: 0;
+      }&:nth-child(3) {
+        -webkit-transform: translateY(-10px) rotate(315deg);
+        transform: translateY(-10px) rotate(315deg);
+      }
+  }
+} #navi {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.toggle_btn {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 5%;
+    width: 30px;
+    height: 30px;
+    transition: all .5s;
+    cursor: pointer;
+    z-index: 20;
+    span {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background-color: #000;
+        border-radius: 4px;
+        transition: all .5s;
+        &:nth-child(1) {
+            top: 4px;
+          }&:nth-child(2) {
+            top: 14px;
+          }&:nth-child(3) {
+            bottom: 4px;
+          }
+      } .toggle-center{
+        width: 20px;
+    }
+  }
+
+ 
+
+  #mask {
+    display: none;
+    transition: all 0.5s;
+  }
+  .open #mask {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba( 245, 245, 245, 0.9);
+    opacity: .8;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+ /*ごりら印の野球道具エリア*/
+
+.gorilla-baseball-area{
+   padding: 0 5%;
+       .gorilla-jirushi-box{
+       .gorilla-jirushi-area{
+        border: 10px solid #fff;
+           .gorilla-jirushi-title{
+               font-size: 20px;
+               .ja{
+                   font-size: 20px;
+               }
+           }p{
+               padding-top: 50px;
+               font-size: 0.9rem;
+           }a{
+               margin: 80px auto;
+               padding: 10px 30px;
+           }
+       }
+       }br{
+        display: none;
+    }
+}
+.gorilla-jirushi-logo{
+   width: 80px;
+   margin-top: 10px;
+}
+
+
+ /*ひだり投げグラブ専門店エリア*/
+
+ .uho-pippo-area{
+    padding: 0 5%;
+        .uho-pippo-box{
+        .uho-pippo-area{
+            height: 100%;
+            border: 10px solid #fff;
+            .uho-pippo-title{
+                padding-left: 0px;
+                font-size: 20px;
+                .ja{
+                    font-size: 20px;
+                }
+            }p{
+                padding-left: 0;
+                padding-top: 50px;
+                font-size: 0.9rem;
+            }a{
+                margin: 80px auto;
+               padding: 10px 30px;
+            }.pippo-flexbox{
+               flex-direction: row-reverse;
+               flex: 1;
+               ul{
+                margin-right: 0px;
+                flex-grow: 1;
+                li{
+                    
+                }
+               
+            }
+            }
+        }
+        }br{
+            display: none;
+        }
+}
+.uho-pippo-logo{
+    width: 80px;
+    margin-top: 20px;
+    
+}
+
+
+/*（株）エムアイエフエリア*/
+
+.uho-mif-area{
+    padding: 0 5%;
+        .uho-mif-box{
+        .uho-mif-coment-area{
+         border: 10px solid #fff;
+            .uho-mif-title{
+                font-size: 20px;
+                span{
+                    font-size: 20px;
+                }
+            }p{
+                padding-top: 50px;
+                font-size: 0.9rem;
+                
+            }a{
+                margin: 80px auto;
+                padding: 10px 30px;
+            }
+        }
+        }br{
+            display: none;
+        }
+ }
+ .uho-mif-logo{
+    width: 100px;
+    margin-top: 10px;
+ }
+ 
+
+/*フッターエリア*/
+
+.footer{
+.footer-logo{
+        height: 80px;
+    }.footer-nav{
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            margin: 20px 20px 0 20px;
+        }
+    } ul{
+        display: flex;
+        justify-content: center;
+        li{
+            margin: 30px 10px 0;
+            img{
+                width: 25px;
+            }
+        }
+    }
+}
+   
+
+.copy-area{
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 30px;
+}
+
+/*-------------------------------------------
+会社概要エリア
+-------------------------------------------*/
+
+#company-main{
+    img{
+        height: 150px; 
+        width: 100%;
+    }h1{
+        top: 50px;
+        text-shadow: 2px 2px 0 #fff;
+        width: 100%;
+    text-align: center;
+    }
+}
+
+.white-area{
+    padding: 100px 0 100px 0;
+}
+
+.uho-company-area{
+     margin: 0 2%;
+   dt{
+        width: 100%;
+        border-right: 1px solid #000;
+        padding: 2% 0;
+    }dd{
+        width: 100%;
+        text-align: center;
+        font-size: 0.875rem;
+    }dl{
+        flex-direction: column;
+    }.last1{
+        text-align: left;
+    }.last{
+        padding: 2% 0;
+    }.address{
+        padding: 2% 0;
+    }
+}
+
+
+/*-------------------------------------------
+お問い合わせエリア
+-------------------------------------------*/
+
+.uho-contact-area input{
+    padding: 10px;
+}
+.uho-contact-area textarea {
+    padding: 10px;
+}
+.uho-contact-area{
+    margin: 0 8%;
+}
+
+/*-------------------------------------------
+ごりら印の野球道具
+-------------------------------------------*/
+
+#gorilla-header{    
+    height: 120px;
+    background-color: $uho-bg;
+    padding: 0 ;    
+    position: relative;
+    z-index: 10;
+    .site-title{
+        width: 100px;
+        padding-top: 20px;
+        padding-left: 5%;
+    }
+}
+
+//ハンバーガー
+
+#gorilla-navi {
+position: relative;
+top: -1500px;
+width: 100%;
+color: #000;
+background-color: rgba( 245, 245, 245, 0.9);
+transition: all .5s;
+z-index: 20;
+opacity: 0;
+.nav-menu {
+margin-bottom: 60px;
+border-bottom: solid 1px #000;
+li {
+  margin: 0;
+  padding: 20px;
+  font-weight: bold;
+  border-top: solid 1px #000;
+  text-align: center;
+a {
+    color: #000;
+   font-family: たぬき油性マジック;
+   font-size: 18px;
+  &:hover {
+    color: $uho-em;
+  opacity: 0.7;
+}
+      }img{
+        width: 25px;
+      }
+    }
+  }
+}
+
+.open {
+.toggle_btn {
+  span {
+background-color: #000;
+&:nth-child(1) {
+    -webkit-transform: translateY(10px) rotate(-315deg);
+    transform: translateY(10px) rotate(-315deg);
+  }&:nth-child(2) {
+    opacity: 0;
+  }&:nth-child(3) {
+    -webkit-transform: translateY(-10px) rotate(315deg);
+    transform: translateY(-10px) rotate(315deg);
+  }
+}
+} #gorilla-navi {
+top: 0;
+opacity: 1;
+}
+}
+
+.gorilla-toggle_btn {
+display: block;
+position: absolute;
+top: 40px;
+right: 5%;
+width: 30px;
+height: 30px;
+transition: all .5s;
+cursor: pointer;
+z-index: 20;
+span {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    border-radius: 4px;
+    transition: all .5s;
+    &:nth-child(1) {
+        top: 4px;
+      }&:nth-child(2) {
+        top: 14px;
+      }&:nth-child(3) {
+        bottom: 4px;
+      }
+  } .toggle-center{
+    width: 20px;
+}
+}
+
+#gorilla-mask {
+display: none;
+transition: all 0.5s;
+}
+.open #gorilla-mask {
+display: block;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba( 245, 245, 245, 0.9);
+opacity: .8;
+z-index: 10;
+cursor: pointer;
+}
+
+#gorilla-main{
+    margin: 0 auto;
+     img{
+     }h1{
+         top: 140px;
+         left: 50%;
+     font-size: 40px;
+     text-shadow: 5px 3px 0 #000;
+     width: 100%;
+     span{
+         font-size: 24px;
+     }
+     }
+ }
+
+ .gorilla-about-area{
+     margin: 0 auto;
+     p{
+         text-align: left;
+         padding: 0 5%;
+     }.gorilla-about-area-top{
+         padding: 0 5%;
+     }
+ }
+ .gorilla-about-imgarea{
+    margin-top: 100px;
+}
+
+ .gorilla-about-title{
+       font-size: 24px;
+  padding-top: 65px;
+  span{
+  }&::before{
+    font-size: 70px;
+  }
+}
+
+.product-title{
+    font-size: 24px;
+    padding-top: 65px;
+    span{
+    }&::before{
+      font-size: 70px;
+    }
+}
+
+#glove{
+    margin: 0 auto;
+    .name-area{
+    text-align: center;
+    .ja{
+        font-size: 48px;
+    }
+    }.select-content01{
+        width: 100%;
+    }  a {
+        width: 250px; 
+        margin: 100px auto 0;  
+        font-size: 16px;     
+      }
+    }
+    
+    .select-content-img01{
+        .img-area-top{
+           flex-direction: column;
+           text-align: center;
+            width: 100%;
+            .img01{
+                width: 100%;
+                img{
+                    width: 80%;
+                    height: 200px;
+                    object-fit: cover;
+                }
+            }.img02{
+                width: 100%;
+                padding-top: 30px;
+                img{
+                    width: 80%;
+                    height: 200px;
+                    object-fit: cover;
+                }
+            }
+        }.img-area-bottom{
+            flex-direction: column;
+            padding-top: 10px;
+            text-align: center;
+            .img03{
+                width: 100%;
+            }
+            .img04{
+                width: 100%;
+                padding-top: 30px;
+            }.img05{
+                width: 100%;
+                padding-top: 30px;
+            }img{
+                width: 80%;
+            }
+        }
+    }
+
+    .select-content-img02{
+        .img-area-top{
+           flex-direction: column;
+           text-align: center;
+            width: 100%;
+            .img01{
+                width: 100%;
+                img{
+                    width: 80%;
+                    height: 200px;
+                    object-fit: cover;
+                }
+            }.img02{
+                width: 100%;
+                padding-top: 30px;
+                img{
+                    width: 80%;
+                    height: 200px;
+                    object-fit: cover;
+                }
+            }
+        }.img-area-bottom{
+            flex-direction: column;
+            padding-top: 10px;
+            text-align: center;
+            .img03{
+                width: 100%;
+            }
+            .img04{
+                width: 100%;
+                padding-top: 30px;
+            }.img05{
+                width: 100%;
+                padding-top: 30px;
+            }img{
+                width: 80%;
+            }
+        }
+    }
+
+    .gorilla-about-imgarea02{
+        margin-top: 100px;
+    }
+
+  
+    #spike{
+        .name-area{
+        text-align: center;
+        padding-left: 0;
+        .ja{
+            font-size: 24px;
+        }
+        }.select-content02{
+            width: 100%;
+        }.dami{
+            display: none;
+        }.coment{
+            width: 100%;
+        }.img01{
+            padding-top: 30px;
+            
+        }
+        }
+    
+        #bat{
+            .name-area{
+            text-align: center;
+            .ja{
+                font-size: 48px;
+            }
+            }.select-content03{
+            .coment{
+                width: 100%;
+            }h1{
+                text-align: center;
+                margin-top: 70px;
+            }
+            }
+            }
+
+
+/*アコーディオン*/
+#shop-area{
+    margin: 0 auto;
+    padding: 100px 2%;
+}
+
+.shop-name{
+    font-size: 24px;
+    padding-top: 65px;
+    span{
+    }&::before{
+      font-size: 70px;
+    }
+}
+
+
+#ac-menu{
+    .label{
+        padding: 40px 0;
+    }.detail{
+        flex-direction: column;
+        padding: 35px 0;
+        dl{
+            font-size: 16px;
+        }dt{
+            width: 100%;
+            margin-bottom: 20px;
+        }dd{
+            margin-bottom: 20px;
+            width: 100%;
+        }
+    }
+}
+
+.menu-jamp{
+    flex-direction: column;
+    h4{
+        text-align: center;
+    }.center{
+        padding: 60px 0;
+    }
+}
+
+.menu-shop{
+  padding-left: 0%;
+}
+
+.gorilla-contact-name{
+    font-size: 24px;
+    padding-top: 65px;
+    span{
+    }&::before{
+      font-size: 70px;
+    }
+}
+
+/*-------------------------------------------
+お問い合わせエリア
+-------------------------------------------*/
+
+.gorilla-contact-area{
+    margin: 0 auto;
+    padding: 60px 15%;
+    label{
+        flex-direction: column;
+        &:not(:last-child){
+            margin-bottom: 40px;
+        }
+    }.title{
+        display: flex;
+        justify-content: flex-start;
+        align-self: flex-start;
+    }.title-textarea{
+        display: flex;
+        justify-content: space-between;
+        align-self: flex-start;
+        padding-top: 30px;
+        display: -webkit-box;
+    }.required{
+    }input,textarea{
+        margin-top: 10px;
+    }textarea{
+        margin-top: 10px;
+    } a {
+        width: 300px;        
+      }
+}
+
+.personal-information{
+    margin: 60px 0 0;
+    .personal-title{
+        font-size: 24px;
+        padding-top: 40px;
+    }.personal-bottom{
+        padding: 30px  10px 40px;
+        text-align: left;
+        br{
+            display: none;
+        }
+    }
+}
+
+/*フッターエリア*/
+
+.footer-gorilla{
+    .footer-gorilla-logo{
+        width: 100px;
+    }.footer-gorilla-nav{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0;
+        li{
+            margin: 20px 20px 0 20px;
+        }
+    } ul{
+        display: flex;
+        justify-content: center;
+        li{
+            margin: 30px 10px 0;
+            img{
+                width: 25px;
+            }
+        }
+    }
+}
+   
+
+.copy-area{
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 0;
+}
+
+
+/*-------------------------------------------
+ひだり投げグラブ専門店
+-------------------------------------------*/
+
+
+#pippo-main{
+    img{
+        height: 300px;
+        display: block;
+    }h1{
+        top: 100px;
+    left: 50%;
+        img{
+            height: 100px;
+        }
+    }
+}
+
+//ハンバーガー
+
+#pippo-navi {
+    position: relative;
+    top: -1500px;
+    width: 100%;
+    color: #000;
+    background-color: rgba( 245, 245, 245, 0.9);
+    transition: all .5s;
+    z-index: 20;
+    opacity: 0;
+  .nav-menu {
+    margin-bottom: 60px;
+    border-bottom: solid 1px #000;
+    li {
+      margin: 0;
+      padding: 20px;
+      font-weight: bold;
+      border-top: solid 1px #000;
+      text-align: center;
+    a {
+        color: #000;
+       font-family: たぬき油性マジック;
+       font-size: 18px;
+      &:hover {
+        color: $uho-em;
+      opacity: 0.7;
+    }
+          }img{
+            width: 25px;
+          }
+        }
+      }
+    }
+
+  .open {
+ .toggle_btn {
+      span {
+    background-color: #000;
+    &:nth-child(1) {
+        -webkit-transform: translateY(10px) rotate(-315deg);
+        transform: translateY(10px) rotate(-315deg);
+      }&:nth-child(2) {
+        opacity: 0;
+      }&:nth-child(3) {
+        -webkit-transform: translateY(-10px) rotate(315deg);
+        transform: translateY(-10px) rotate(315deg);
+      }
+  }
+} #pippo-navi {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.pippo-toggle_btn {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 5%;
+    width: 30px;
+    height: 30px;
+    transition: all .5s;
+    cursor: pointer;
+    z-index: 20;
+    span {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        border-radius: 4px;
+        transition: all .5s;
+        &:nth-child(1) {
+            top: 4px;
+          }&:nth-child(2) {
+            top: 14px;
+          }&:nth-child(3) {
+            bottom: 4px;
+          }
+      } .toggle-center{
+        width: 20px;
+    }
+  }
+
+ 
+
+  #pippo-mask {
+    display: none;
+    transition: all 0.5s;
+  }
+  .open #pippo-mask {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba( 245, 245, 245, 0.9);
+    opacity: .8;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+
+  #pippo-header{    
+    height: 120px;
+    background-color: $pippo-blue;
+    padding: 0;    
+    position: relative;
+    z-index: 30;
+    .pippo-site-title{
+        width: 190px;
+        padding-top: 20px;
+        padding-left: 5%;
+    }
+}
+
+.pippo-baseball-area{
+    height: 100%;
+    padding: 0 5% 30px;
+        .pippo-box{
+     width: 100%;
+       margin: 0 auto;
+       padding: 120px 5%;
+        .pippo-area{
+           
+            .pippo-title{
+              
+                .ja{
+                   
+                }
+            }p{
+                padding: 0 20px 30px 20px ;
+            }.top-coment{
+                padding-top: 100px;
+            }.last-coment{
+                padding-bottom: 50px;
+            }
+        }
+        }
+}
+
+.pippo-about-title{
+    font-size: 36px;
+    padding-top: 65px;
+    span{
+    }&::before{
+      font-size: 80px;
+    }
+}
+
+.product-pippo-title{
+    font-size: 36px;
+    padding-top: 65px;
+    span{
+    }&::before{
+      font-size: 80px;
+    }
+}
+
+.pippo-shop-name{
+    font-size: 36px;
+    padding-top: 65px;
+    span{
+    }&::before{
+      font-size: 80px;
+    }
+}
+
+.pippo-contact-name{
+    font-size: 36px;
+    padding-top: 65px;
+    span{
+    }&::before{
+      font-size: 80px;
+    }
+}
+
+#glove-pippo{
+    margin: 0 auto;
+    .pippo-name-area{
+    text-align: center;
+    .ja{
+        font-size: 48px;
+    }
+    }.select-content01{
+        width: 100%;
+    }  a {
+        width: 300px;        
+      }
+    }
+    
+    .select-content-img01{
+        .img-area-top{
+           flex-direction: column;
+           text-align: center;
+            width: 100%;
+            .img01{
+                width: 100%;
+                img{
+                    width: 80%;
+                    height: 200px;
+                    object-fit: cover;
+                }
+            }.img02{
+                width: 100%;
+                padding-top: 30px;
+                img{
+                    width: 80%;
+                    height: 200px;
+                    object-fit: cover;
+                }
+            }
+        }.img-area-bottom{
+            flex-direction: column;
+            padding-top: 10px;
+            text-align: center;
+            .img03{
+                width: 100%;
+            }
+            .img04{
+                width: 100%;
+                padding-top: 30px;
+            }.img05{
+                width: 100%;
+                padding-top: 30px;
+            }img{
+                width: 80%;
+            }
+        }
+    }
+
+/*アコーディオン*/
+#pippo-shop-area{
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.pippo-shop-name{
+    font-size: 36px;
+    padding-top: 65px;
+    span{
+    }&::before{
+      font-size: 80px;
+    }
+}
+
+
+#pippo-ac-menu{
+    .label{
+        padding: 40px 0;
+    }.detail{
+        flex-direction: column;
+        dl{
+            font-size: 16px;
+        }
+    }
+}
+
+.menu-jamp{
+    flex-direction: column;
+    h4{
+        text-align: center;
+    }.center{
+        padding: 60px 0;
+    }
+}
+
+.menu-shop{
+  padding-left: 0%;
+}
+
+.pippo-contact-name{
+    font-size: 36px;
+    padding-top: 65px;
+    span{
+    }&::before{
+      font-size: 80px;
+    }
+}
+
+/*-------------------------------------------
+お問い合わせエリア
+-------------------------------------------*/
+
+#pippo-contact-area{
+    margin: 0 auto;
+    padding: 60px 15%;
+    label{
+        flex-direction: column;
+        &:not(:last-child){
+            margin-bottom: 40px;
+        }
+    }.title{
+        display: flex;
+        justify-content: flex-start;
+        align-self: flex-start;
+    }.title-textarea{
+        display: flex;
+        justify-content: space-between;
+        align-self: flex-start;
+        padding-top: 30px;
+        display: -webkit-box;
+    }.required{
+    }input,textarea{
+        margin-top: 10px;
+    }textarea{
+        margin-top: 10px;
+    } a {
+        width: 300px;        
+      }
+}
+
+/*フッターエリア*/
+
+.footer-pippo{
+    .footer-pippo-area{
+        height: 300px;
+    width: 100%;
+      
+    }.footer-pippo-logo{
+        width: 170px;
+    }.footer-pippo-nav{
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            margin: 20px 20px 0 20px;
+        }
+    } ul{
+        display: flex;
+        justify-content: center;
+        li{
+            margin: 30px 10px 0;
+            img{
+                width: 25px;
+            }
+        }
+    }
+}
+
+
+/*-------------------------------------------
+うほーむぺーじ製作所
+-------------------------------------------*/
+
+#uho-me-header{    
+    height: 120px;
+    background-color: $uho-bg;
+    padding: 0 ;    
+    position: relative;
+    z-index: 10;
+    margin: 0 auto;
+    .site-title{
+        width: 180px;
+        padding-top: 10px;
+        padding-left: 5%;
+    }
+}
+
+
+
+//ハンバーガー
+
+#uho-me-navi {
+position: relative;
+top: -1500px;
+width: 100%;
+color: #000;
+background-color: rgba( 245, 245, 245, 0.9);
+transition: all .5s;
+z-index: 20;
+opacity: 0;
+.nav-menu {
+margin-bottom: 60px;
+border-bottom: solid 1px #000;
+li {
+  margin: 0;
+  padding: 20px;
+  font-weight: bold;
+  border-top: solid 1px #000;
+  text-align: center;
+a {
+    color: #000;
+   font-family: たぬき油性マジック;
+   font-size: 18px;
+  &:hover {
+    color: $uho-em;
+  opacity: 0.7;
+}
+      }img{
+        width: 25px;
+      }
+    }
+  }
+}
+
+.open {
+.toggle_btn {
+  span {
+background-color: #000;
+&:nth-child(1) {
+    -webkit-transform: translateY(10px) rotate(-315deg);
+    transform: translateY(10px) rotate(-315deg);
+  }&:nth-child(2) {
+    opacity: 0;
+  }&:nth-child(3) {
+    -webkit-transform: translateY(-10px) rotate(315deg);
+    transform: translateY(-10px) rotate(315deg);
+  }
+}
+} #uho-me-navi {
+top: 0;
+opacity: 1;
+}
+}
+
+.uho-me-toggle_btn {
+display: block;
+position: absolute;
+top: 40px;
+right: 5%;
+width: 30px;
+height: 30px;
+transition: all .5s;
+cursor: pointer;
+z-index: 20;
+span {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    border-radius: 4px;
+    transition: all .5s;
+    &:nth-child(1) {
+        top: 4px;
+      }&:nth-child(2) {
+        top: 14px;
+      }&:nth-child(3) {
+        bottom: 4px;
+      }
+  } .toggle-center{
+    width: 20px;
+}
+}
+
+#uho-me-mask {
+display: none;
+transition: all 0.5s;
+}
+.open #uho-me-mask {
+display: block;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba( 245, 245, 245, 0.9);
+opacity: .8;
+z-index: 10;
+cursor: pointer;
+}
+
+#gorilla-main{
+    margin: 0 auto;
+     h1{
+         top: 200px;
+         left: 50%;
+     font-size: 56px;
+     text-shadow: 5px 3px 0 #000;
+     width: 100%;
+     span{
+         font-size: 32px;
+     }
+     }
+    }
+
+    #uho-me-main{
+        position: relative;
+         img{
+             height: 100%;
+             display: block;
+             width: 100%;
+         }h1{
+             position: absolute;
+             top: 36%;
+         left: 50%;
+         transform: translateX(-50%);
+         font-size: 1rem;
+         color: #fff;
+         font-family: たぬき油性マジック;
+         }h2{
+            position: absolute;
+            top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.875rem;
+        color: #fff;
+        font-family: "ヒラギノ明朝 ProN";
+         }
+     }
+
+    .footer-uho-me-logo{
+        width: 180px;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    /*-------------------------------------------
+ホームページ制作　「コメントエリア」
+-------------------------------------------*/
+
+#service-coment-img{
+    padding: 30px 0;
+    height: 100%;
+    margin-top: 150px;
+    .service-coment01{
+        margin-left: 10%;
+        width: 80%;
+        padding: 30px 0% 50px 0%;
+        br{
+            display: none;
+        }h2{
+            font-size: 1.2rem;
+            text-align: center;
+        }p{
+            font-size: 0.875rem;
+            padding: 0 2%;
+        }
+    }
+   }
+/*-------------------------------------------
+ホームページ制作　「問題解決エリア」
+-------------------------------------------*/
+
+#service-coment-img02{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 100px 0;
+    .service-left{
+        width: 100%;
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 100%;
+        }
+    }.service-right{
+        width: 100%;
+        h2{
+            color: $uho-em;
+            text-align: center;
+            font-size: 1.2rem;
+        }p{
+            margin-top: 60px;
+            padding: 0 4%;
+            font-size: 0.875rem;
+        }br{
+        display: none;
+    }
+    }
+}
+/*-------------------------------------------
+ホームページ制作　「FLOWエリア」
+-------------------------------------------*/
+
+
+#service-flow{
+    .section-title{
+        h2{
+            font-size: 50px;
+            padding-bottom: 10px;
+        }.boder{
+            padding: 0 1.5em 20px;
+           }
+    }.flow-box-area{
+        margin-top: 100px;
+        .flow-box{
+            .txt{
+                width: 25%;
+                .icon{
+                    img{
+                        width: 80px;
+                    }
+                }
+            }.flow-txt{
+                width: 60%;
+                padding: 0 20px;
+            }.num{
+               font-size: 32px;
+               width: 15%;
+            }
+        }
+    }
+}
+
+/*縦のライン*/
+.v_line_fix {
+    margin-left: 11.8%;
+  }
+
+  .privacy-area{
+    padding: 100px 5% 150px;
+    text-align: left;
+    h2{
+        font-size: 18px;
+    }p{
+       
+    }
+}
+
+
+}
+
+@media screen and (max-width: 768px)and(min-width:425px){
+    #uho-me-main{
+        position: relative;
+         img{
+             height: 100%;
+             display: block;
+             width: 100%;
+         }h1{
+             position: absolute;
+             top: 36%;
+         left: 50%;
+         transform: translateX(-50%);
+         font-size: 1.32rem;
+         color: #fff;
+         font-family: たぬき油性マジック;
+         }h2{
+            position: absolute;
+            top: 48%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1rem;
+        color: #fff;
+        font-family: "ヒラギノ明朝 ProN";
+         }
+     }
+
+}
+
+    @media screen and (max-width: 425px){
+        /*-------------------------------------------
+ホームページ制作　「FLOWエリア」
+-------------------------------------------*/
+
+
+#service-flow{
+    .section-title{
+        h2{
+            font-size: 28px;
+        }.boder{
+            padding: 0 1em 20px;
+           }
+    }.flow-box-area{
+        .flow-box{
+            margin: 0;
+            .txt{
+                .icon{
+                    img{
+                    }
+                }p{
+                    font-size: 14px;
+                }
+            }.flow-txt{
+                p{
+                    font-size: 14px;
+                }
+            }.num{
+            }
+        }
+    }
+}
+
+/*縦のライン*/
+.v_line_fix {
+    margin-left: 7.8%;
+  }
+
+    }
+
+    @media screen and (max-width: 375px){
+        /*-------------------------------------------
+ホームページ制作　「FLOWエリア」
+-------------------------------------------*/
+
+
+
+#company-info{
+    .info-area{
+        dl{
+        }dt{
+        width: 90px;
+        padding: 20px 0 20px 0;
+        }dd{
+        padding: 20px 0 20px 10px;
+        width: calc(100% - 90px);
+      }
+  }
+}
+
+}
